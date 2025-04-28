@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Я давно не получал заказы, почему?</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 450px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .content {
+      padding: 0 20px;
+      flex: 1;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 24px;
+      line-height: 1.2;
+    }
+    
+    .text-content {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .instructions {
+      font-size: 17px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .instructions ol {
+      counter-reset: item;
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .instructions li {
+      counter-increment: item;
+      margin-bottom: 10px;
+      padding-left: 0;
+      display: flex;
+    }
+
+    .instructions li:before {
+      content: counter(item) ". ";
+      font-weight: bold;
+      margin-right: 4px;
+    }
+    
+    .instructions li strong {
+      font-weight: 600;
+    }
+    
+    .sign-off {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-top: auto;
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="index.html" class="nav-button nav-button-back" aria-label="Вернуться"></a>
+      <button class="nav-button nav-button-close" aria-label="Закрыть"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Я давно не получал заказы, почему?</h1>
+      
+      <div class="text-content">
+        К сожалению, мы не можем назначать заказы вручную, так как система полностью автоматизирована. Заказы распределяются, основываясь на вашем текущем местоположении, типе транспортного средства и многих других факторов.
+      </div>
+      
+      <div class="instructions">
+        Следуйте этим инструкциям, если не получаете заказы:
+        <ol>
+          <li><span>Держите приложение <strong>Wolt Partner открытым</strong> на переднем плане устройства.</span></li>
+          <li><span><strong>Отключите энергосберегающие настройки</strong> на телефоне для стабильной работы приложения.</span></li>
+          <li><span><strong>Проверьте уровень спроса в приложении</strong> и переместитесь в активную зону, если это необходимо.</span></li>
+        </ol>
+      </div>
+      
+      <div class="sign-off">
+        Надеемся, это поможет. Удачных доставок! 🚴‍♂️ 💙
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
