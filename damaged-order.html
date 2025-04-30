@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заказ был поврежден</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 430px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .content {
+      padding: 0 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 30px;
+      line-height: 1.2;
+    }
+    
+    .text-block {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .text-block .bold {
+      font-weight: 600;
+    }
+    
+    .text-block .emoji {
+      font-size: 20px;
+      margin-left: 4px;
+    }
+    
+    .support-button-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(to top, #000, transparent);
+    }
+    
+    .support-button {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 17px;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="deliver-order.html" class="nav-button nav-button-back" aria-label="Вернуться"></a>
+      <button class="nav-button nav-button-close" aria-label="Закрыть"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Заказ был поврежден</h1>
+      
+      <div class="text-block">
+        Если заказ поврежден, сообщите нам, поврежден ли весь заказ или <span class="bold">только его часть</span> — фото тоже помогут! <span class="emoji">📸</span>
+      </div>
+      
+      <div class="text-block">
+        Отправьте номер заказа в чат ниже. Это поможет нам быстрее вам помочь.
+      </div>
+    </div>
+    
+    <div class="support-button-container">
+      <button class="support-button">Написать в поддержку</button>
+    </div>
+  </div>
+</body>
+</html> 

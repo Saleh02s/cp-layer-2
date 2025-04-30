@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Не могу связаться с клиентом</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 430px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .content {
+      padding: 0 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 24px;
+      line-height: 1.2;
+    }
+    
+    .text-content {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .steps {
+      margin-bottom: 30px;
+    }
+    
+    .step {
+      display: flex;
+      margin-bottom: 15px;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    
+    .step-number {
+      margin-right: 8px;
+      font-weight: bold;
+    }
+    
+    .step .chat-icon {
+      font-size: 20px;
+      margin: 0 4px;
+    }
+    
+    .step strong {
+      font-weight: 600;
+    }
+    
+    .highlight {
+      font-weight: bold;
+    }
+    
+    .note {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .support-btn {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 0;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 16px 20px;
+      cursor: pointer;
+      text-align: center;
+      width: calc(100% - 40px);
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="deliver-order.html" class="nav-button nav-button-back" aria-label="Вернуться"></a>
+      <button class="nav-button nav-button-close" aria-label="Закрыть"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Не могу связаться с клиентом</h1>
+      
+      <div class="text-content">
+        Попробуйте эти шаги, чтобы быстро решить проблему:
+      </div>
+      
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1.</span>
+          <span>Напишите клиенту в чате <span class="chat-icon">💬</span> – это самый быстрый способ устранить большинство проблем с доставкой.</span>
+        </div>
+        <div class="step">
+          <span class="step-number">2.</span>
+          <span><strong>Проверьте примечания к доставке</strong> – возможно, там есть особые инструкции.</span>
+        </div>
+        <div class="step">
+          <span class="step-number">3.</span>
+          <span>Позвоните клиенту – если чат не работает.</span>
+        </div>
+      </div>
+      
+      <div class="note">
+        Сначала попробуйте связаться с клиентом <span class="highlight">через чат</span>. Если проблему не удалось решить, обратитесь в службу поддержки с помощью кнопки ниже
+      </div>
+      
+      <button class="support-btn">Написать в поддержку</button>
+    </div>
+  </div>
+</body>
+</html> 
