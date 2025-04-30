@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заведение задерживает заказ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 450px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .content {
+      padding: 0 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 40px;
+      line-height: 1.2;
+    }
+    
+    .text-content {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .options {
+      margin-bottom: 20px;
+    }
+    
+    .option-item {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .text-bold {
+      font-weight: 600;
+    }
+    
+    .text-with-emoji {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    
+    .text-with-emoji .emoji {
+      margin-left: 5px;
+      font-size: 20px;
+    }
+    
+    .support-btn {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 0;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 16px 20px;
+      cursor: pointer;
+      text-align: center;
+      width: calc(100% - 40px);
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="pickup-order.html" class="nav-button nav-button-back" aria-label="Вернуться"></a>
+      <button class="nav-button nav-button-close" aria-label="Закрыть"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Заведение задерживает заказ.</h1>
+      
+      <div class="text-with-emoji">
+        <p class="text-content">Нам жаль слышать о задержке в заведении</p>
+        <span class="emoji">💙</span>
+      </div>
+      
+      <div class="options">
+        <p class="option-item">У вас есть два варианта в этом случае:</p>
+        <p class="option-item">- <span class="text-bold">Дождаться</span> заказа.</p>
+        <p class="option-item">- <span class="text-bold">Снять заказ</span> и продолжить свой день.</p>
+      </div>
+      
+      <p class="text-content">Пожалуйста, сообщите в службу поддержки о задержке, чтобы они могли проинформировать клиента и, при необходимости, связаться с заведением. Свяжитесь с ними, используя кнопку ниже 👇</p>
+      
+      <button class="support-btn">Написать в поддержку</button>
+    </div>
+  </div>
+</body>
+</html> 
