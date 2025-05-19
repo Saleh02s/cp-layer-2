@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ödənişi səhv ID-yə etdim</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 450px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .content {
+      padding: 0 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 30px;
+      line-height: 1.2;
+    }
+    
+    .text-content {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .alert {
+      color: #ff3b30;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    
+    .link {
+      color: #0A84FF;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="payments.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
+      <button class="nav-button nav-button-close" aria-label="Bağla"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Ödənişi səhv ID-yə etdim</h1>
+      
+      <div class="text-content">
+        <span class="alert">❗</span>Növbəti ödənişlərinızdə, ID kodunuzu tam düzgün qeyd etdiyinizdən əmin olun.Bu <a href="#" class="link">linkə</a> daxil olaraq dəyişiklik formunu doldurun.
+      </div>
+      
+      <div class="text-content">
+        - Ödəniş qəbzinin şəkilini əlavə etməyi unutmayın.
+        <br>
+        - Qəbzin şəkili olmadığı halda, sorğunuz qəbul olunmayacaq.
+      </div>
+      
+      <div class="text-content">
+        Bilmək vacibdir:
+        <br>
+        - Sorğulara 1 gün ərzində baxılır və sizə cavab verilir.
+        <br>
+        - Əgər hesabınız nağd borc səbəbilə, bloklanıbsa, səhv etdiyiniz ödəniş nağd borcun ödənişi kimi hesablanmır.
+        <br>
+        - Bu məsələ ilə əlaqəli əlavə çatlar açmayın.
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

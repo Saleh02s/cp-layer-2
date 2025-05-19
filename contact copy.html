@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Əlaqə</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 450px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 auto;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+      z-index: 1;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .content {
+      padding: 0 0 20px 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 20px 30px;
+      line-height: 1.2;
+    }
+    
+    .intro-text {
+      font-size: 17px;
+      line-height: 1.5;
+      margin: 0 20px 15px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .warning {
+      display: flex;
+      align-items: flex-start;
+      margin: 0 20px 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    
+    .warning-icon {
+      margin-right: 10px;
+      font-size: 24px;
+      line-height: 1;
+    }
+    
+    .info-block {
+      margin: 0 20px 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    
+    .important-note {
+      display: flex;
+      align-items: flex-start;
+      margin: 0 20px 30px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    
+    .important-icon {
+      margin-right: 10px;
+      color: #ff3b30;
+      font-size: 24px;
+      line-height: 1;
+    }
+    
+    .contact-item {
+      margin: 0 20px 20px;
+      padding: 16px;
+      background-color: #1c1c1e;
+      border-radius: 12px;
+    }
+    
+    .contact-item-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      font-size: 16px;
+    }
+    
+    .contact-icon {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    
+    .contact-link {
+      color: #0A84FF;
+      text-decoration: none;
+    }
+    
+    .support-btn {
+      margin: 24px 20px;
+      padding: 18px 0;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="index.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
+      <div class="nav-title">Əlaqə</div>
+      <button class="nav-button nav-button-close" aria-label="Bağla"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Bizimlə əlaqə</h1>
+      
+      <p class="intro-text">Kuryer komandası ilə əlaqə saxlamaq üçün aşağıdakı məlumatlardan istifadə edə bilərsiniz.</p>
+      
+      <div class="warning">
+        <span class="warning-icon">⚠️</span>
+        <span>Nəzərə alın ki, bu bölmə aktiv sifarişlərə aid deyil.</span>
+      </div>
+      
+      <div class="info-block">
+        İş günləri saat 15:00-a qədər göndərilən müraciətlər eyni gün cavablandırılacaq. İş günləri saat 15:00-dan sonra və ya həftə sonu/qeyri-iş günləri göndərilən müraciətlər isə növbəti iş günündə cavablandırılacaq.
+      </div>
+      
+      <div class="important-note">
+        <span class="important-icon">‼️</span>
+        <span>Zəhmət olmasa, məsələnizi ətraflı izah edin və lazım olan sənədləri əlavə edin, çünki biz yalnız gündə bir dəfə cavab veririk!</span>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-item-title">Kuryer dəstəyi</div>
+        <div class="contact-detail">
+          <span class="contact-icon">✉️</span>
+          <a href="mailto:courier.support@example.com" class="contact-link">courier.support@example.com</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-icon">📱</span>
+          <a href="tel:+994501234567" class="contact-link">+994 50 123 45 67</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-item-title">Texniki dəstək</div>
+        <div class="contact-detail">
+          <span class="contact-icon">✉️</span>
+          <a href="mailto:tech.support@example.com" class="contact-link">tech.support@example.com</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-icon">📱</span>
+          <a href="tel:+994501234568" class="contact-link">+994 50 123 45 68</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-item-title">İş vaxtları</div>
+        <div class="contact-detail">
+          <span class="contact-icon">🕙</span>
+          <span>Bazar ertəsi - Cümə: 09:00 - 18:00</span>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-icon">🕙</span>
+          <span>Şənbə - Bazar: 10:00 - 16:00</span>
+        </div>
+      </div>
+      
+      <button class="support-btn">Dəstəyə yazmaq</button>
+    </div>
+  </div>
+</body>
+</html> 

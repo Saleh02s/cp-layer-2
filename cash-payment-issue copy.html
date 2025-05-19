@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="az">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Платежи</title>
+  <title>Nağd ödənişim keçməyib</title>
   <style>
     * {
       box-sizing: border-box;
@@ -70,64 +70,75 @@
     .content {
       padding: 0 20px;
       flex: 1;
+      display: flex;
+      flex-direction: column;
     }
     
     h1 {
       font-size: 36px;
       font-weight: 800;
-      margin: 10px 0 40px;
+      margin: 10px 0 30px;
       line-height: 1.2;
     }
     
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0;
-      border-bottom: 1px solid #333;
+    .text-content {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .link {
+      color: #0A84FF;
       text-decoration: none;
+    }
+    
+    .emoji {
+      font-style: normal;
+      margin-left: 4px;
+    }
+    
+    .support-btn {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 0;
+      background-color: #333;
       color: #fff;
-    }
-    
-    .menu-item:last-child {
-      border-bottom: none;
-    }
-    
-    .arrow {
-      font-size: 24px;
-      color: #666;
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 16px 20px;
+      cursor: pointer;
+      text-align: center;
+      width: calc(100% - 40px);
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
   <div class="phone-container">
     <div class="nav-area">
-      <a href="index.html" class="nav-button nav-button-back" aria-label="Вернуться"></a>
-      <button class="nav-button nav-button-close" aria-label="Закрыть"></button>
+      <a href="payments.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
+      <button class="nav-button nav-button-close" aria-label="Bağla"></button>
     </div>
     
     <div class="content">
-      <h1>Платежи</h1>
+      <h1>Nağd ödənişim keçməyib</h1>
       
-      <a href="#" class="menu-item">
-        <div>Проблема с оплатой заказа</div>
-        <div class="arrow">›</div>
-      </a>
+      <div class="text-content">
+        Sizə kömək edə bilmək üçün müvafiq <a href="#" class="link">formanı</a> doldurmağınız vacibdir. <span class="emoji">📝</span>
+      </div>
       
-      <a href="#" class="menu-item">
-        <div>Оплатил(а) на неверный ID</div>
-        <div class="arrow">›</div>
-      </a>
+      <div class="text-content">
+        Məlumat göndərildikdən sonra cavab 1 iş günü ərzində veriləcək. Zəhmət olmasa, yeni chat açmadan cavabı gözləyin. Səbriniz və anlayışınıza görə təşəkkür edirik! <span class="emoji">💙</span>
+      </div>
       
-      <a href="#" class="menu-item">
-        <div>Наличная оплата через терминал не прошла</div>
-        <div class="arrow">›</div>
-      </a>
-      
-      <a href="#" class="menu-item">
-        <div>Информация о наличных заказах</div>
-        <div class="arrow">›</div>
-      </a>
+      <button class="support-btn">Dəstəyə yazmaq</button>
     </div>
   </div>
 </body>

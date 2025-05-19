@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Əməliyyatlar komandası ilə əlaqə saxlamaq</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .phone-container {
+      width: 100%;
+      max-width: 450px;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    
+    .nav-area {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+      z-index: 1;
+    }
+    
+    .nav-button-back::before {
+      content: "←";
+      font-size: 22px;
+      display: block;
+    }
+    
+    .nav-button-close::before {
+      content: "×";
+      font-size: 28px;
+      display: block;
+    }
+    
+    .nav-title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    
+    .content {
+      padding: 0 20px;
+      flex: 1;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 10px 0 30px;
+      line-height: 1.2;
+    }
+
+    .intro-text {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .warning-text {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .warning-icon {
+      color: #ffcc00;
+      margin-right: 8px;
+    }
+
+    .info-text {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .important-text {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .important-icon {
+      margin-right: 8px;
+    }
+    
+    .menu-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .menu-item-text {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    
+    .menu-arrow {
+      font-size: 24px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="nav-area">
+      <a href="index.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
+      <div class="nav-title"></div>
+      <button class="nav-button nav-button-close" aria-label="Bağla"></button>
+    </div>
+    
+    <div class="content">
+      <h1>Əməliyyatlar komandası ilə əlaqə saxlamaq</h1>
+      
+      <div class="intro-text">
+        Əməliyyatlar komandasına xoş gəlmisiniz!
+        <br><br>
+        Zəhmət olmasa, sizə aid olan seçimi edin və biz sizə mümkün qədər tez cavab verməyə çalışacağıq.
+      </div>
+      
+      <div class="warning-text">
+        <span class="warning-icon">⚠️</span>
+        <span>Nəzərə alın ki, bu bölmə aktiv sifarişlərə aid deyil.</span>
+      </div>
+      
+      <div class="info-text">
+        İş günləri saat 15:00-a qədər göndərilən müraciətlər eyni gün cavablandırılacaq. İş günləri saat 15:00-dan sonra və ya həftə sonu/qeyri-iş günləri göndərilən müraciətlər isə növbəti iş günündə cavablandırılacaq.
+      </div>
+      
+      <div class="important-text">
+        <span class="important-icon">❗</span>
+        <span>Zəhmət olmasa, məsələnizi ətraflı izah edin və lazım olan sənədləri əlavə edin, çünki biz yalnız gündə bir dəfə cavab veririk ❗</span>
+      </div>
+      
+      <ul class="menu-list">
+        <li>
+          <a href="deduction-reason.html" class="menu-item">
+            <span class="menu-item-text">Çıxılmanın səbəbi</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="equipment-related.html" class="menu-item">
+            <span class="menu-item-text">Ləvazimatlarla əlaqəli</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="insurance-info.html" class="menu-item">
+            <span class="menu-item-text">Sığorta haqqında</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="trilateral-agreement.html" class="menu-item">
+            <span class="menu-item-text">Üçtərəfli müqavilə haqqında</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="as-consulting-info.html" class="menu-item">
+            <span class="menu-item-text">AS Consulting haqqında</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="tax-dsmf.html" class="menu-item">
+            <span class="menu-item-text">Vergi və DSMF</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="waiting-payments.html" class="menu-item">
+            <span class="menu-item-text">Gözləmə ödənişləri ilə əlaqəli</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="electronic-invoice.html" class="menu-item">
+            <span class="menu-item-text">Elektron qaimə ilə bağlı sual</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="change-requisites.html" class="menu-item">
+            <span class="menu-item-text">Rekvizitlərin dəyişdirilməsi</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="voen-to-fleet.html" class="menu-item">
+            <span class="menu-item-text">Fərdi VÖEN-dən Fleet-ə keçid</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="fleet-to-voen.html" class="menu-item">
+            <span class="menu-item-text">Fleet-dən şəxsi VÖEN-ə keçid</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="terminate-contract.html" class="menu-item">
+            <span class="menu-item-text">Müqaviləyə xitam vermək</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="partner-contract-copy.html" class="menu-item">
+            <span class="menu-item-text">Partnyor müqaviləsinin nüsxəsi</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+        <li>
+          <a href="other-issues.html" class="menu-item">
+            <span class="menu-item-text">Digər</span>
+            <span class="menu-arrow">›</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html> 

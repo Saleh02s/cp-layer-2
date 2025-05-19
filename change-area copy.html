@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Şikayətlər</title>
+  <title>Ərazinin dəyişdirilməsi</title>
   <style>
     * {
       box-sizing: border-box;
@@ -70,66 +70,51 @@
     .content {
       padding: 0 20px;
       flex: 1;
+      display: flex;
+      flex-direction: column;
     }
     
     h1 {
-      font-size: 40px;
+      font-size: 36px;
       font-weight: 800;
       margin: 10px 0 30px;
       line-height: 1.2;
     }
     
-    .menu-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    .text-content {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.9);
     }
     
-    .menu-item {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 20px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .link {
+      color: #0A84FF;
       text-decoration: none;
-      color: #fff;
-    }
-    
-    .menu-item-text {
-      font-size: 18px;
-      font-weight: 400;
-    }
-    
-    .menu-arrow {
-      font-size: 24px;
-      opacity: 0.5;
     }
   </style>
 </head>
 <body>
   <div class="phone-container">
     <div class="nav-area">
-      <a href="index.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
+      <a href="account.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
       <button class="nav-button nav-button-close" aria-label="Bağla"></button>
     </div>
     
     <div class="content">
-      <h1>Şikayətlər</h1>
+      <h1>Ərazinin dəyişdirilməsi</h1>
       
-      <ul class="menu-list">
-        <li>
-          <a href="#" class="menu-item">
-            <span class="menu-item-text">Tariflər yüksəlmir</span>
-            <span class="menu-arrow">›</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="menu-item">
-            <span class="menu-item-text">Məkan və ya xidmət haqqında rəy bildirmək</span>
-            <span class="menu-arrow">›</span>
-          </a>
-        </li>
-      </ul>
+      <div class="text-content">
+        Digər əraziyə keçmək üçün, aşağıdakı sayta keçid edərək, sorğunu doldurun.
+      </div>
+      
+      <div class="text-content">
+        <a href="#" class="link">Sorğunu doldurmaq</a>
+      </div>
+      
+      <div class="text-content">
+        Sorğulara baxılma müddəti ərazilərdə olan tələbatdan asılıdır: ərazilərdə sifarişlərin sayı artdıqca sorğu göndərən kuryer-partnyorlar həmən ərazilərə keçid edə biləcək. Xahiş edirik, təkrar olaraq sorğu formunu doldurmayasınız.
+      </div>
     </div>
   </div>
 </body>
