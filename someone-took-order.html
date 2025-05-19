@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="az">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кто-то забрал мой заказ</title>
+  <title>Kimsə mənim sifarişimi götürüb</title>
   <style>
     * {
       box-sizing: border-box;
@@ -87,6 +87,17 @@
       color: rgba(255, 255, 255, 0.9);
     }
     
+    .text-with-emoji {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    
+    .text-with-emoji .emoji {
+      margin-left: 5px;
+      font-size: 20px;
+    }
+    
     .support-button-container {
       position: absolute;
       bottom: 0;
@@ -114,28 +125,29 @@
 <body>
   <div class="phone-container">
     <div class="nav-area">
-      <a href="pickup-order.html" class="nav-button nav-button-back" aria-label="Вернуться"></a>
-      <button class="nav-button nav-button-close" aria-label="Закрыть"></button>
+      <a href="pickup-order.html" class="nav-button nav-button-back" aria-label="Geri qayıt"></a>
+      <button class="nav-button nav-button-close" aria-label="Bağla"></button>
     </div>
     
     <div class="content">
-      <h1>Кто-то забрал мой заказ</h1>
+      <h1>Kimsə mənim sifarişimi götürüb</h1>
       
-      <div class="text-block">
-        Если вы обнаружили, что ваш заказ был забран другим курьером, пожалуйста, немедленно сообщите нам об этом.
+      <div class="text-with-emoji">
+        <p class="text-block">Sifarişlərin qarışdırıldığını eşitdiyimizə görə üzgünük</p>
+        <span class="emoji">💙</span>
       </div>
       
       <div class="text-block">
-        В сообщении укажите номер заказа и подробно опишите ситуацию, включая название заведения и примерное время, когда вы обнаружили, что заказ был забран.
+        Əgər bir neçə aktiv sifarişiniz varsa, prosesi sürətləndirmək üçün hansının qarışdırıldığını dəstək xidmətinə bildirin.
       </div>
       
       <div class="text-block">
-        Мы рассмотрим вашу ситуацию в приоритетном порядке.
+        Aşağıdakı düymədən istifadə edərək bizimlə əlaqə saxlaya bilərsiniz.
       </div>
     </div>
     
     <div class="support-button-container">
-      <button class="support-button">Написать в поддержку</button>
+      <button class="support-button">Dəstəyə yazmaq</button>
     </div>
   </div>
 </body>
